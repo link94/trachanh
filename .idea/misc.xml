@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_cart.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_hoadon.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_loaisp.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_menu.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_nguoidung.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_add_soluong.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_update_menu.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/dialog_updatenguoidung.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_chang_password.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_chi_tiet_hoa_don.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_hoadon.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_khach_hang.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_loai_san_pham.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_nguoi_dung.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_san_pham.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_thong_ke.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_thong_ke_doanh_so.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_thong_ke_san_pham.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/fragment_thong_kee.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/items_chitiethoadon.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/items_hoadon.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/items_khachhang.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/items_menu.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/items_nguoidung.xml" value="0.25" />
+        <entry key="..\:/Users/dotha/Downloads/QuanLyCafe-master/app/src/main/res/layout/spiner_item.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

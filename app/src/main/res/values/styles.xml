@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#F5F8F8</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">#FFFFFF</item>
+        <item name="android:textColor">#FFA500</item>
+        <item name="android:textColorPrimary">#FFA500</item>
+    </style>
+
+    <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">#E42525</item>
+        <item name="colorPrimaryDark">#FFA500</item>
+        <item name="colorAccent">#FFA500</item>
+    </style>
+
+</resources>

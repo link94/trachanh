@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SanPhamFragment"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toggle"
+        layout="@layout/toogle_bar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:id="@+id/spinerr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="10dp">
+            <Spinner
+                android:id="@+id/spiner"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/radius"/>
+            <Button
+                android:id="@+id/btnAddLoaiSP"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="+"
+                android:background="@drawable/radius"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/items_menu"
+            android:layout_below="@id/spinerr"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_AddMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFA"
+            android:outlineSpotShadowColor="@color/cardview_dark_background"
+
+            android:src="@drawable/add" />
+    </RelativeLayout>
+</LinearLayout>

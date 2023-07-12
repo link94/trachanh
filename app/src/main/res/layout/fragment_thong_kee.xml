@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ThongKeeFragment"
+    android:background="#ffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:id="@+id/btnTuNgay"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:hint="Từ ngày"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/radius"
+                    android:textColor="#FFFF"
+                    android:backgroundTint="#FFA500"
+                    android:textColorHint="#FFFFFF" />
+                <Button
+                    android:id="@+id/btnDenNgay"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:hint="Đến ngày"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/radius"
+                    android:textColor="#FFFF"
+                    android:backgroundTint="#FFA500"
+                    android:textColorHint="#FFFFFF"/>
+                <Button
+                    android:id="@+id/btnTK"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:hint="Thống kê"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/radius"
+                    android:textColor="#FFFF"
+                    android:backgroundTint="#FFA500"
+                    android:textColorHint="#FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linner2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTongDoanhThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Tổng doanh thu:"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"/>
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#888"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linner3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Danh sách hóa đơn đã thanh toán"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#888"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tksp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
