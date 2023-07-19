@@ -35,6 +35,8 @@ import java.util.ArrayList;
 
 public class ChiTietHoaDonFragment extends Fragment {
     FloatingActionButton fab_AddCart;
+    FloatingActionButton fab_ReloadCart;
+
     TextView tvMaHoaDon, tvThoiGian;
     RecyclerView recyclerView;
     ChiTietHoaDonDAO dao;
@@ -62,6 +64,7 @@ public class ChiTietHoaDonFragment extends Fragment {
 
         //anh xa view
         fab_AddCart = view.findViewById(R.id.fab_AddCart);
+        fab_ReloadCart = view.findViewById(R.id.fab_ReloadCart);
         tvMaHoaDon = view.findViewById(R.id.tvMaHoaDon);
         tvThoiGian = view.findViewById(R.id.tvThoiGian);
         recyclerView = view.findViewById(R.id.recyclerView_cart);
@@ -85,8 +88,8 @@ public class ChiTietHoaDonFragment extends Fragment {
 
 
 
-        tvMaHoaDon.setText("Mã hóa đơn: "+HoaDonAdapter.mahoadon);
-        tvThoiGian.setText("Ngày: "+HoaDonAdapter.ngay);
+        tvMaHoaDon.setText("Mã hóa đơn: " + HoaDonAdapter.mahoadon);
+        tvThoiGian.setText("Ngày: " + HoaDonAdapter.ngay);
 
 
 
@@ -117,6 +120,13 @@ public class ChiTietHoaDonFragment extends Fragment {
             }
         });
 
+        fab_ReloadCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                capnhatrv();
+            }
+        });
+
         btnThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -130,15 +140,12 @@ public class ChiTietHoaDonFragment extends Fragment {
                         btnThanhToan.setText("Đã thanh toán");
                         btnThanhToan.setEnabled(false);
                         fab_AddCart.setEnabled(false);
+                        fab_ReloadCart.setEnabled(false);
+                        cartAdapter.setClickListenerDisabled();
 
-                        listHD = new ArrayList<>();
-                        listHD = hoaDonDAO.getAllHD();
                         String mahoadon = HoaDonAdapter.mahoadon;
-                        String ngay = listHD.get(0).getNgay();
-                        String soBan = listHD.get(0).getSoban();
-                        String makhachhang = listHD.get(0).getMakhachhang();
-                        String tranghai = "DTT";
-                        HoaDon item = new HoaDon(mahoadon, ngay, soBan, makhachhang, tranghai);
+                        HoaDon item = hoaDonDAO.getHD(mahoadon);
+                        item.setTrangthai("DTT");
                         hoaDonDAO.update(item);
                         dialogInterface.cancel();
                         Toast.makeText(getContext(), "Thanh toán thành công", Toast.LENGTH_SHORT).show();
@@ -177,7 +184,9 @@ public class ChiTietHoaDonFragment extends Fragment {
                 if(trangthai.equalsIgnoreCase("DTT")){
                     btnThanhToan.setEnabled(false);
                     fab_AddCart.setEnabled(false);
+                    fab_ReloadCart.setEnabled(false);
                     btnThanhToan.setText("Đã thanh toán");
+                    cartAdapter.setClickListenerDisabled();
                 }
             }
         }catch (Exception e){

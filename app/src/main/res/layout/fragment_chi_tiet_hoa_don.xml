@@ -90,15 +90,36 @@
                     android:id="@+id/recyclerView_cart"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab_AddCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add"
-                    android:outlineSpotShadowColor="@color/cardview_dark_background"
-                    android:layout_gravity="right"
-                    android:backgroundTint="#FFA"
-                    android:layout_marginTop="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab_AddCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#FFA"
+                        android:outlineSpotShadowColor="@color/cardview_dark_background"
+                        android:src="@drawable/add" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab_ReloadCart"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FFA"
+                        android:outlineSpotShadowColor="@color/cardview_dark_background"
+                        android:src="@drawable/reload" />
+                </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="360dp"
