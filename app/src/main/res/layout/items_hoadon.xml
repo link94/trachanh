@@ -18,7 +18,7 @@
             android:id="@+id/img_row"
             android:layout_width="40dp"
             android:layout_height="64dp"
-            android:src="@drawable/cash"/>
+            android:src="@drawable/thanhtoans"/>
 
         <LinearLayout
             android:layout_width="0dp"

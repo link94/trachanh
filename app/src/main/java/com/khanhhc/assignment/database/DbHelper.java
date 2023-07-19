@@ -110,9 +110,9 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sql);
 
         // nhap bang hoadon
-        sql = "INSERT INTO hoadon VALUES (null, '2023/07/11', '1', null,1)";
+        sql = "INSERT INTO hoadon VALUES (null, '2023/07/18', '1', null,1)";
         sqLiteDatabase.execSQL(sql);
-        sql = "INSERT INTO hoadon VALUES (null, '2023/07/11', '2', null, 2)";
+        sql = "INSERT INTO hoadon VALUES (null, '2023/07/18', '2', null, 2)";
         sqLiteDatabase.execSQL(sql);
 
         // nhap bang chi tiet hoa don
