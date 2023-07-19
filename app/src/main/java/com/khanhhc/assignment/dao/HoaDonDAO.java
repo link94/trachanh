@@ -65,6 +65,25 @@ public class HoaDonDAO {
         }
         return list;
     }
+
+    //get 1 hoa don
+    public HoaDon getHD(String mahoadon) {
+        HoaDon hoaDon = null;
+        String sql = "SELECT * FROM hoadon WHERE mahoadon = ?";
+        String[] selectionArgs = { mahoadon };
+        Cursor c = database.rawQuery(sql, selectionArgs);
+        if (c.moveToFirst()) {
+            String maHoaDon = c.getString(c.getColumnIndex("mahoadon"));
+            String ngay = c.getString(c.getColumnIndex("ngay"));
+            String soBan = c.getString(c.getColumnIndex("soban"));
+            String makhachhang = c.getString(c.getColumnIndex("makhachhang"));
+            String trangThai = c.getString(c.getColumnIndex("trangthai"));
+            hoaDon = new HoaDon(maHoaDon, ngay, soBan, makhachhang, trangThai);
+        }
+        return hoaDon;
+    }
+
+
     //get all menu theo loai san pham
     public ArrayList<HoaDon> getAllHD(){
         String sql = "SELECT *FROM hoadon;";
